@@ -2,7 +2,7 @@
 
 Analyze any product like a senior PM. Get a structured breakdown of what it does, what's working, what's not, and how to talk about it in an interview -- in 30 seconds.
 
-**[Try the live app](https://your-app-name.streamlit.app)** (link updated after deployment)
+**[Try the live app](https://ai-appuct-critique-xrvcpzzh6zwvs7m5appgepg.streamlit.app)**
 
 ---
 
