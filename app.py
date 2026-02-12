@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
+from pathlib import Path
 
 from prompts import SYSTEM_PROMPT, build_prompt
 
@@ -19,7 +20,8 @@ logger = logging.getLogger(__name__)
 # Configuration
 # ---------------------------------------------------------------------------
 
-load_dotenv()
+# Load .env from the app directory; override=True so .env wins over system/shell env vars
+load_dotenv(Path(__file__).resolve().parent / ".env", override=True)
 
 MAX_PRODUCT_INPUT_LENGTH = 2000
 
@@ -174,7 +176,7 @@ def main():
     )
 
     # --- API Key ---
-    api_key = os.getenv("GOOGLE_API_KEY", "")
+    api_key = (os.getenv("GOOGLE_API_KEY") or "").strip()
 
     # Allow override via Streamlit secrets (for deployed version)
     if not api_key and hasattr(st, "secrets") and "GOOGLE_API_KEY" in st.secrets:
