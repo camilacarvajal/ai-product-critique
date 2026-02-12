@@ -16,14 +16,15 @@ A structured product analysis follows a predictable framework: what it does, who
 
 ## The Solution
 
-One input. One click. Six sections of structured analysis:
+One input. One click. Seven sections of structured analysis:
 
 1. **Product Overview** -- What it does, who it's for, business model
 2. **Competitive Landscape** -- Competitors, moat, market position
 3. **Product Strengths** -- 3 specific things working well
 4. **Areas for Improvement** -- 3 specific things to fix
 5. **Key Metrics** -- What to measure and why
-6. **Interview Prep** -- Smart questions to ask if interviewing at this company
+6. **Experiment Ideas** -- What you'd test and how you'd measure success
+7. **Interview Prep** -- Smart questions to ask if interviewing at this company
 
 Supports both product names (uses AI knowledge) and URLs (scrapes the page for additional context).
 

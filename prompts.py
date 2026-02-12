@@ -90,7 +90,13 @@ If you were interviewing at this company, these are smart questions that show pr
 
 
 def build_prompt(product_input: str, url_context: str = "") -> str:
-    """Build the full prompt for the LLM."""
+    """Build the full prompt for the LLM.
+
+    Note: OUTPUT_TEMPLATE uses .format() with only {product_input} and {url_context}.
+    If you add more placeholders, ensure scraped url_context cannot contain braces that
+    look like format keys (e.g. {other}), or use a substitution method that avoids
+    interpreting user/scraped content as format keys.
+    """
     context_section = ""
     if url_context:
         context_section = (

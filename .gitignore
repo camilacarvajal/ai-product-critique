@@ -6,3 +6,4 @@ venv/
 .DS_Store
 .cursor
 .cursorignore
+issues/
